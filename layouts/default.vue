@@ -41,7 +41,7 @@
       <!-- <v-spacer /> -->
       <v-toolbar-items>
         <nuxt-link to="/" :prefetch="false" class="my-auto">
-          <img src="/logo/chq-l.svg" style="height: 40px;" />
+          <img src="../assets/logo/chq-l.svg" style="height: 40px;" />
         </nuxt-link>
       </v-toolbar-items>
       <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">

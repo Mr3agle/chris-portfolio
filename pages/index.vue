@@ -8,7 +8,7 @@
 
           <p>Este va a ser un muy buen portfolio.</p>
           <div class="text-xs-right">
-            <img src="@/assets/logo/chq-l.svg" />
+            <img src="@/assets/logo/chq-d.svg" />
             <em>
               <small>&mdash; Christopher Quinn</small>
             </em>

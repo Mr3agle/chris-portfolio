@@ -21,7 +21,7 @@
     <v-carousel class="my-5" hide-delimiters>
       <v-carousel-item v-for="(item,i) in handraws" :key="i">
         <v-row justify="center">
-          <video :src="item.src" controls autoplay="true"></video>
+          <video :src="item.src" controls></video>
         </v-row>
       </v-carousel-item>
     </v-carousel>
@@ -37,7 +37,7 @@
     <v-carousel class="my-5" hide-delimiters>
       <v-carousel-item v-for="(item,i) in bw" :key="i">
         <v-row justify="center">
-          <video :src="item.src" controls autoplay="true" height="500px"></video>
+          <video :src="item.src" controls height="500px"></video>
         </v-row>
       </v-carousel-item>
     </v-carousel>
@@ -51,7 +51,7 @@
       >Animación llamada CHEESE que cuenta una historia de acerca de la discriminación, aquí vemos todos los procesos de animación trabajar en conjunto.</p>
     </v-row>
     <v-row justify="center">
-      <video class="mt-5" src="/video/cheeseMockUp.mp4" controls autoplay="true" height="500px"></video>
+      <video class="mt-5" src="/video/cheeseMockUp.mp4" controls height="500px"></video>
     </v-row>
   </div>
 </template>

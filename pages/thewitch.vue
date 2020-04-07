@@ -1,9 +1,9 @@
 <template>
   <div>
     <v-container>
-      <v-row dense>
+      <v-row dense class="mt-10">
         <v-col cols="12">
-          <v-card color="white" light elevation="5">
+          <v-card color="white" light elevation="5" class="pa-10">
             <div class="d-flex flex-no-wrap justify-space-between">
               <v-avatar class="ma-3" size="225" tile>
                 <v-img
@@ -11,10 +11,10 @@
                 ></v-img>
               </v-avatar>
               <div>
-                <v-card-title class="display-2">The Witch</v-card-title>
+                <div class="section-title ml-5">The Witch</div>
 
                 <v-card-subtitle
-                  class="mt-1 subtitle-1"
+                  class="mt-1 section-title-1"
                 >The Witch es una experiencia de horror, en la cual el usuario deberá pasar una noche un aterrador bosque y descubrir lo que acecha en la oscuridad.</v-card-subtitle>
                 <v-card-subtitle>El juego fue desarrollado en Unity y programado en CSharp para Gear VR. La mayoría de assets son externos y de uso libre con algunos creados por mí.</v-card-subtitle>
               </div>
@@ -22,10 +22,11 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row class="my-10">
+      <v-divider class="my-6" />
+      <v-row>
         <v-col>
-          <v-card elevation="5">
-            <v-card-title class="display-1 text-center">Videos</v-card-title>
+          <v-card elevation="0">
+            <v-card-title class="section-title text-center">Videos</v-card-title>
             <v-row>
               <v-col>
                 <video class="px-3" src="/video/The witch trailer.mp4" width="100%" controls></video>
@@ -37,10 +38,11 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-divider class="my-6" />
       <v-row>
         <v-col>
-          <v-card elevation="5">
-            <v-card-title class="display-1 text-center">Screenshots</v-card-title>
+          <v-card elevation="0">
+            <v-card-title class="section-title text-center">Screenshots</v-card-title>
             <v-row>
               <v-carousel class="my-5 px-7" hide-delimiters>
                 <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
@@ -49,6 +51,7 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-divider class="my-6" />
       <v-row class="mt-7">
         <v-col>
           <v-hover>
@@ -58,7 +61,7 @@
                   src="https://lh3.googleusercontent.com/8Xfxyl9gZf5lWVzj62iCFZyGQt0F6yq5WTQBGJPKRPSRLEfa0uE-fvtxvK70MwQmy3bm77OmGf5mLhzu9agcNceVIN_YkQ7MUtqXJArfqLkrqh6bzxXg4EszLlk5JZnNRZYnfN8u8Q3ZpWvQcZKHnlu1RCS4Uc1mgoIwlqpk9iluYFDsRJeHbehBAMvLmnDbwzngxmDmRRo9XdnbFS2RgfZwa1y-X-ejkBfibQjWQtBffnCGlLgDq5TnqKw2K8uarOUFYMV8uP__oijCwxqqfxomCSmNGHQGDI-lpQukt9kWEAQ2l0ILMhncJS4gBkLKz0IVtI9RPCglUOhpWXbhcEkq0aEcN3CGpXWkvEiPRsYGVybgCtnSgYcVLo-tBEyZw7Bu3Nvz5yBAjZHQ7LicZO6UpRE0zVRPGsdcBWwATidtqrnBp91Unw9ktb-XmFDwenWrrAyE0z4qJl-6aLAkXmrio1otQ4pYrCSWj46AMd1g9PfhWuxKJDhdIdicSrfIo5dwF_jjBjxCFhmWVNLrASvHobAsJRrwQPx1Isk3qXrksexW13apFZrpAveltxqOKh4daNFrQ3MtWeBc7kOSGlv64viU4YIPKomclZp7HxSoeNZoF7tHZflchZnLJI6nfqUN2KFCm3SwGkdOtyuUxbCMCmocilEuKTizDg4QnizTkqZMlK0OnioHGzg3gYQYjU8NJ_0n8r7Wx-3owT7OW8LjdNhQ7Q4a9uFRcDYV_FO_AZOWkSU_7x0=w1278-h719-no"
                 >
                   <v-card-text>
-                    <h2 class="title white--text">Ape Bash</h2>
+                    <h2 class="section-title2 white--text">Ape Bash</h2>
                   </v-card-text>
                 </v-img>
 
@@ -81,7 +84,7 @@
                   src="https://lh3.googleusercontent.com/Kz0EpUTanE3sCsZcNn_b4PJmg9b5_rI1G3MVbSqCl-J2i4vNSK0L9E700z_Ouka1z5PzJakZAi4glyHrFnkNpK5hTOI81z1lEFLyi2t0OIIdiZIHtnB0YLCnUIsKB2_1EVw6_4FaAptr0pib83VlpVHjWvmyfD9nVG7u4fEXRlrKpC3Iz_qL8PA4knSTC5yMipDyC_xOaRYB2AU7smcxKvldkS0_Fh0y_YoIJF28gLwK69wlmRPNs2aBRpx-RK4jGSECl5JP82ZB6zeyP38hTIqi6PW5TN2pfMMkisE8nMw9gGfNOnwTWcwyOavfjv2SGw__yr-UpXO6IU-UJgRNW6mq38qv6aO4fSGMcPgaVONOHN9ueHEhdhGqzpw1-ytdsmYLorfZeLDzf6uPux4_C_nJN2H9XMDlX3CznH7nDmQZJ6QAbEJlhoPwyc6TxBiAFs5f6dCw4jOULhd5xSJsOJ2-ziS4B1_AWLhH5kN-sDlPEgfhNKRmMHGlPyYS6TU74la95PmyP_PdIEAgVEBylJd5uutwquPmGbq4lWOw-pA7_6pU_I8VmX6NjUV3MWQhCMLHxvkG4MXdEPHbNGE8XuITkSOWMQ6agArmDjcw21pYqJ2CYeWr_j3EH4gCVyDtACU04G0iQYcy5Xe0hFS74yfrmPCFvN9pMPKrcuDUtFUaXEPo3dsTGnw11g3Su3ww5R43qu9Y9R-0qkpgbES6T4MlzddTTnhmg03-NK0q1v073_1GiezM_U8=w1278-h719-no"
                 >
                   <v-card-text>
-                    <h2 class="title white--text">Majini</h2>
+                    <h2 class="section-title2 white--text">Majini</h2>
                   </v-card-text>
                 </v-img>
 
@@ -103,7 +106,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       items: [
         {

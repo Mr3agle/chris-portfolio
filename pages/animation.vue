@@ -1,65 +1,78 @@
 <template>
   <div>
-    <v-row class="ml-1 mt-5">
-      <div class="display-2">Sketches y Diseño de Personajes</div>
-      <p
-        class="mt-3"
-      >Estos sketches fueron creados con l intención de dar vida a diferentes personajes, además de verlos en diferentes situaciones. Es el primer paso en el proceso de animación.</p>
-    </v-row>
-    <v-carousel class="my-5" hide-delimiters>
-      <v-carousel-item v-for="(item,i) in sketches" :key="i" :src="item.src"></v-carousel-item>
-    </v-carousel>
+    <v-parallax
+      dark
+      src="https://images.pexels.com/photos/1111692/pexels-photo-1111692.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      fluid
+    >
+      <v-row align="center" justify="center">
+        <v-col class="text-center" cols="12">
+          <h1 class="banner-title">Animación</h1>
+        </v-col>
+      </v-row>
+    </v-parallax>
+    <v-container>
+      <v-row class="ml-1 mt-12">
+        <div class="section-title">Sketches y Diseño de Personajes</div>
+        <p
+          class="mt-3"
+        >Estos sketches fueron creados con l intención de dar vida a diferentes personajes, además de verlos en diferentes situaciones. Es el primer paso en el proceso de animación.</p>
+      </v-row>
+      <v-carousel class="my-5" hide-delimiters>
+        <v-carousel-item v-for="(item,i) in sketches" :key="i" :src="item.src"></v-carousel-item>
+      </v-carousel>
 
-    <v-divider class="my-12" />
+      <v-divider class="my-12" />
 
-    <v-row class="ml-1 mt-5">
-      <div class="display-2">Pruebas de Lápiz</div>
-      <p
-        class="mt-3"
-      >Estas son animaciones simples para probar varios conceptos o movimientos antes de integrarlos a una animación final. Es el segundo paso en el proceso de animación.</p>
-    </v-row>
-    <v-carousel class="my-5" hide-delimiters>
-      <v-carousel-item v-for="(item,i) in handraws" :key="i">
-        <v-row justify="center">
-          <video :src="item.src" controls></video>
-        </v-row>
-      </v-carousel-item>
-    </v-carousel>
+      <v-row class="ml-1 mt-5">
+        <div class="section-title">Pruebas de Lápiz</div>
+        <p
+          class="mt-3"
+        >Estas son animaciones simples para probar varios conceptos o movimientos antes de integrarlos a una animación final. Es el segundo paso en el proceso de animación.</p>
+      </v-row>
+      <v-carousel class="my-5" hide-delimiters>
+        <v-carousel-item v-for="(item,i) in handraws" :key="i">
+          <v-row justify="center">
+            <video :src="item.src" controls></video>
+          </v-row>
+        </v-carousel-item>
+      </v-carousel>
 
-    <v-divider class="my-12" />
+      <v-divider class="my-12" />
 
-    <v-row class="ml-1 mt-5">
-      <div class="display-2">Animación a Blanco y Negro</div>
-      <p
-        class="mt-3"
-      >Animaciones casi finales, donde se asegura que las animaciones y concepto funcionen bien en conjunto antes de darles color. Es el tercer paso en el proceso de animación.</p>
-    </v-row>
-    <v-carousel class="my-5" hide-delimiters>
-      <v-carousel-item v-for="(item,i) in bw" :key="i">
-        <v-row justify="center">
-          <video :src="item.src" controls height="500px"></video>
-        </v-row>
-      </v-carousel-item>
-    </v-carousel>
+      <v-row class="ml-1 mt-5">
+        <div class="section-title">Animación a Blanco y Negro</div>
+        <p
+          class="mt-3"
+        >Animaciones casi finales, donde se asegura que las animaciones y concepto funcionen bien en conjunto antes de darles color. Es el tercer paso en el proceso de animación.</p>
+      </v-row>
+      <v-carousel class="my-5" hide-delimiters>
+        <v-carousel-item v-for="(item,i) in bw" :key="i">
+          <v-row justify="center">
+            <video :src="item.src" controls height="500px"></video>
+          </v-row>
+        </v-carousel-item>
+      </v-carousel>
 
-    <v-divider class="my-12" />
+      <v-divider class="my-12" />
 
-    <v-row class="ml-1 mt-5">
-      <div class="display-2">Producto Final</div>
-      <p
-        class="mt-3"
-      >Animación llamada CHEESE que cuenta una historia de acerca de la discriminación, aquí vemos todos los procesos de animación trabajar en conjunto.</p>
-    </v-row>
-    <v-row justify="center">
-      <video class="mt-5" src="/video/cheeseMockUp.mp4" controls height="500px"></video>
-    </v-row>
+      <v-row class="ml-1 mt-5">
+        <div class="section-title">Producto Final</div>
+        <p
+          class="mt-3"
+        >Animación llamada CHEESE que cuenta una historia de acerca de la discriminación, aquí vemos todos los procesos de animación trabajar en conjunto.</p>
+      </v-row>
+      <v-row justify="center">
+        <video class="mt-5" src="/video/cheeseMockUp.mp4" controls height="500px"></video>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       sketches: [
         {

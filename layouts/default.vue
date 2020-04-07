@@ -66,7 +66,7 @@
       </v-btn>
     </v-app-bar>
     <v-content>
-      <v-container>
+      <v-container fluid pa-0>
         <nuxt />
       </v-container>
     </v-content>
@@ -80,7 +80,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       clipped: true,
       drawer: true,
@@ -98,7 +98,7 @@ export default {
         },
         {
           icon: 'mdi-file-code',
-          title: 'Web-dev',
+          title: 'Web-Dev',
           to: '/webdev'
         }
       ],
@@ -109,9 +109,15 @@ export default {
     }
   },
   computed: {
-    bg() {
+    bg () {
       return this.background ? 'https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' : undefined
     },
   },
 }
 </script>
+
+<style lang="scss">
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+</style>

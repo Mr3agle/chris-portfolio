@@ -3,7 +3,7 @@
     <v-container>
       <v-row dense class="mt-10">
         <v-col cols="12">
-          <v-card color="white" light elevation="15" class="pa-10">
+          <v-card color="white" light elevation="0" class="pa-10">
             <div class="d-flex flex-no-wrap justify-space-between">
               <v-avatar class="ma-3" size="225" tile>
                 <v-img
@@ -11,9 +11,11 @@
                 ></v-img>
               </v-avatar>
               <div>
-                <div class="section-title ml-5">Majini</div>
+                <div class="section-title ml-5">
+                  <img src="img/majini-title.png" alt="ApeBash" srcset="" width="150px">
+                </div>
                 <v-card-subtitle
-                  class="mt-1 section-title-1"
+                  class="pt-0 section-title-1"
                 >Majini es un juego que cree como un ejercicio universitario y deriva mucha inspiración de DOOM en cuento a mecánicas y usabilidad. En corto, el juego trata acerca de matar zombies y recolectar una llave mágica que le permitirá acceder a una carpa magina y pasar el nivel. Aprendí y disfruté mucho en el desarrollo de este juego.</v-card-subtitle>
                 <v-card-subtitle>El juego fue desarrollado en Unity y programado en CSharp para Gear VR. La mayoría de assets son externos y de uso libre con algunos creados por mí.</v-card-subtitle>
               </div>

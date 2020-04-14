@@ -3,7 +3,7 @@
     <v-container>
       <v-row dense class="mt-10">
         <v-col cols="12">
-          <v-card color="white" light elevation="15" class="pa-10">
+          <v-card color="white" light elevation="0" class="pa-10">
             <div class="d-flex flex-no-wrap justify-space-between">
               <v-avatar class="ma-3" size="225" tile>
                 <v-img
@@ -11,9 +11,11 @@
                 ></v-img>
               </v-avatar>
               <div>
-                <div class="section-title ml-5">Ape Bash</div>
+                <div class="section-title ml-5">
+                  <img src="img/apebash-title.png" alt="ApeBash" srcset="" width="150px" class="mt-5">
+                </div>
                 <v-card-subtitle
-                  class="mt-1 section-title-1"
+                  class="section-title-1 pt-0"
                 >ApeBash es un juego inspirado en Fruit Ninja, en el que el jugador deberá sobrevivir el mayor tiempo a un ataque fructifero de hombre monos. El jugador tiene una espada para poder rebanar todo tipo de fruta que es lanzada en su dirección.</v-card-subtitle>
                 <v-card-subtitle>El juego fue desarrollado en Unity y programado en CSharp para Gear VR. La mayoría de assets son externos y de uso libre con algunos creados por mí.</v-card-subtitle>
               </div>

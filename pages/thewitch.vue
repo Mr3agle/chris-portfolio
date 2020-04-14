@@ -3,7 +3,7 @@
     <v-container>
       <v-row dense class="mt-10">
         <v-col cols="12">
-          <v-card color="white" light elevation="5" class="pa-10">
+          <v-card color="white" light elevation="0" class="pa-10">
             <div class="d-flex flex-no-wrap justify-space-between">
               <v-avatar class="ma-3" size="225" tile>
                 <v-img
@@ -11,7 +11,9 @@
                 ></v-img>
               </v-avatar>
               <div>
-                <div class="section-title ml-5">The Witch</div>
+                <div class="section-title ml-5">
+                  <img src="img/thewitch-title.png" alt="ApeBash" srcset="" width="150px" class="mt-5">
+                </div>
 
                 <v-card-subtitle
                   class="mt-1 section-title-1"
